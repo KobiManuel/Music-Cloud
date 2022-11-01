@@ -1,0 +1,80 @@
+.uigrid{
+    display: grid;
+    grid-column-gap: 30px;
+    align-content: center;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1100px;
+
+}
+
+
+.uigrid-1{
+    grid-column: span 1;
+}
+.uigrid-2{
+    grid-column: span 2;
+}
+.uigrid-3{
+    grid-column: span 3;
+}
+.uigrid-4{
+    grid-column: span 4;
+}
+.uigrid-5{
+    grid-column: span 5;
+}
+.uigrid-6{
+    grid-column: span 6;
+}
+.uigrid-7{
+    grid-column: span 7;
+}
+.uigrid-8{
+    grid-column: span 8;
+}
+.uigrid-9{
+    grid-column: span 9;
+}
+.uigrid-10{
+    grid-column: span 10;
+}
+.uigrid-11{
+    grid-column: span 11;
+}
+.uigrid-12{
+    grid-column: span 12;
+}
+.ui-grid-end{
+    grid-column: 8/-1;
+}
+.uigrid-span{
+    grid-column: 9/-1;
+}
+.ui-grid-span1{
+    grid-column: 1/4;
+}
+.form-grid{
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(7,1fr);
+    align-content: center;
+    justify-content: center;
+}
+.form-grid-2{
+    grid-column: span 2;
+    min-height: 200px;
+    position: relative;
+}
+.form-grid-5{
+    grid-column: span 5;
+    position: relative;
+}
+
+
+
+
+
+
+

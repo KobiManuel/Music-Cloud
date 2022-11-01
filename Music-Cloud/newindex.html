@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Nanum+Myeongjo&display=swap" rel="stylesheet">    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/uigrid.css" />
+    <title>Cloud</title>
+  </head>
+  <body onload="hide();">
+    <div id="msc" class="music-play">
+      <div class="uigrid music-play-inner">
+        <div id="music-info" class="uigrid-2 music-details">
+          <div id="img-container" class="img-container">
+          <img class="music-icon" src="./assets/Ghosts.mp3" id="cover">
+          </div>
+          <div class="music-title-artist">
+          <p class="dark-text font-large" id="title">Ghosts</p>
+          <p class="dark-text font-small" id="artiste-name">Justin Bieber</p>
+          </div>
+        </div>
+        <audio src="./assets/Ghosts.mp3" id="audio"></audio>
+        <div class="uigrid-2 music-controls">
+          <span id="prev" class="material-symbols-outlined">
+            skip_previous
+            </span>
+            <span id="play" class="material-symbols-outlined play-center">
+              pause_circle
+              </span>
+            <span id="next" class="material-symbols-outlined">
+              skip_next
+              </span>
+        </div>
+        <div  id="progress-container" class="uigrid-6 progress-container">
+          <div id="progress-bar" class="progress-bar"></div>
+          <span class=" dark-text font-small current-time">00:00</span>
+          <span class="dark-text font-small song-duration">00:00</span>
+        </div>
+        <div class="uigrid-2 music-functions">
+          <span id="shuffle" class="material-symbols-outlined">
+            shuffle
+            </span>
+            <span id="repeatMsc" class="material-symbols-outlined">
+              repeat
+              </span>
+        </div>
+      </div>
+    </div>
+    <div
+      id="mySidebar"
+      class="sidebar"
+      onmouseover="toggleSidebar();"
+      onmouseout="toggleSidebar();"
+    >
+      <p class="green-text font-large" style="padding: 30px 0 0 30px">
+        MUSIC CLOUD
+      </p>
+      <div id="sidebar-inner" class="sidebar-inner">
+        <div class="sidebar-top">
+          <ul>
+            <li class="white-text">
+              <a href="newindex.html"
+                ><i class="material-icons">home</i
+                ><span class="icon-text">home</span></a
+              >
+            </li>
+            <li class="white-text">
+              <a href="#"
+                ><i class="material-icons">search</i
+                ><span class="icon-text">browse</span></a
+              >
+            </li>
+            <li class="white-text">
+              <a href="#"
+                ><i class="material-icons">radio</i
+                ><span class="icon-text">radio</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="library">
+          <p class="red-text font-small">Your Library</p>
+          <ul>
+            <li class="white-text">
+              <a href="#"
+                ><i class="material-icons">alarm</i
+                ><span class="icon-text">recently played</span></a
+              >
+            </li>
+            <li class="white-text">
+              <a href="#"
+                ><i class="material-icons">favorite</i
+                ><span class="icon-text">favorite songs</span></a
+              >
+            </li>
+            <li class="white-text">
+              <a href="#"
+                ><i class="material-icons">person</i
+                ><span class="icon-text">artists</span></a
+              >
+            </li>
+            <li class="white-text">
+              <a href="#"
+                ><i class="material-icons">album</i
+                ><span class="icon-text">albums</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="playlists" class="playlists">
+          <p class="red-text font-small">PLAYLISTS</p>
+          <ul>
+            <li class="white-text">U.S TOP 50</li>
+            <li class="white-text">U.K TOP 50</li>
+            <li class="white-text">ROMANCE SEASON</li>
+          </ul>
+        </div>
+        <div id="btn" class="sidebar-btn">
+          <button class="sidebar-button">
+            <i class="material-icons">add</i
+            ><span class="green-text font-small">ADD NEW PLAYLIST</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <nav class="navbar">
+        <div class="search-bar">
+          <i class="material-icons srch grey-text">search</i>
+          <input
+            class="search"
+            type="search"
+            placeholder="Search for songs, artists etc...."
+          />
+        </div>
+        <div class="headerIcons">
+          <i class="material-icons srch">settings</i>
+          <i class="material-icons ntf">notifications</i>
+          <img
+            src="./assets/profilePic.JPG"
+            alt="profile picture"
+            class="profilePic"
+            style="margin: 0"
+          />
+        </div>
+      </nav>
+      <div class="main-content">
+        <div id="carousel" class="carousel">
+          <div class="carousel-thumbnails">
+            <div class="button1 center-text">
+           <button class="carousel-item" id="s1"></button>
+           <p class="white-text font-large">Ghosts</p>
+           <p class="white-text font-small">Justin Bieber</p>
+           </div>
+           <div class="button2 center-text">
+           <button class="carousel-item" id="s2"></button>
+           <p class="white-text font-large">WhenTPO</p>
+           <p class="white-text font-small">Billie Eilish</p>
+           </div>
+           <div class="button3 center-text">
+           <button class="carousel-item" id="s3"></button>
+           <p class="white-text font-large">AfterHours</p>
+           <p class="white-text font-small">The Weekend</p>
+           </div>
+           <div class="button4 center-text">
+           <button class="carousel-item" id="s4"></button>
+           <p class="white-text font-large">Happier</p>
+           <p class="white-text font-small">Marshsmello</p>
+           </div>
+           <div class="button5 center-text">
+           <button class="carousel-item" id="s5"></button>
+           <p class="white-text font-large">Higher</p>
+           <p class="white-text font-small">Rihanna</p>
+           </div>
+</div>
+           <label for="s1" id="slide1" >Album : Justice</label>
+           <label for="s2" id="slide2">Album : When we fall asleep, where do we go</label>
+           <label for="s3" id="slide3">Album : After Hours</label>
+           <label for="s4" id="slide4">Album : Bravo Hits Zima 2019</label>
+           <label for="s5" id="slide5">Album : Anti</label>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/data.js"></script>
+  <script src="./scripts/main.js"></script>
+</html>
